@@ -61,7 +61,7 @@ def hello_pubsub(cloud_event):
 
         print("Starting Execution")
 
-        model = GenerativeModel("gemini-1.5-pro-preview-0409")
+        model = GenerativeModel("gemini-1.5-pro-001")
         responses = model.generate_content(
             [video1, ""f"{request}"""],
             generation_config=generation_config,
@@ -109,7 +109,7 @@ def hello_pubsub(cloud_event):
 
         print("Starting Execution")
 
-        model = GenerativeModel("gemini-1.5-pro-preview-0409")
+        model = GenerativeModel("gemini-1.5-pro-001")
         responses = model.generate_content(
             [file1,file2, ""f"{request}"""],
             generation_config=generation_config,
